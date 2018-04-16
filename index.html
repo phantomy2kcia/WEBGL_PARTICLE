@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WEBGL PARTICLE</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="particles.css"/>
+    <script src="lib/jquery-2.1.1.min.js"></script>
+    <script src="lib/igloo-0.1.2.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/fps.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <h1>WEBGL PARTICLE</h1>
+    <canvas id="display" width="700" height="700"></canvas>
+    <div class="controls">
+      <div class="particles">
+        <label>파티클:</label>
+        <button class="increase">더 많이</button>
+        <button class="decrease">더 적게</button>
+        <input class="color" type="color" value="#249EFF"/>
+        <button class="reset">리셋</button>
+        <div class="slider">
+          <label>굵기:</label>
+          <input class="size" type="range" min="1" max="16" value="3"/>
+        </div>
+        <div class="slider">
+          <label>중력:</label>
+          <input class="gravity" type="range" step="0.01"
+                 min="0" max="0.5" value="0.05"/>
+        </div>
+        <div class="slider">
+          <label>바람:</label>
+          <input class="wind" type="range" step="0.1"
+                 min="-4" max="4" value="0"/>
+        </div>
+        <div class="slider">
+          <label>강도:</label>
+          <input class="restitution" type="range" step="0.05"
+                 min="0" max="1.5" value="0.25"/>
+        </div>
+      </div>
+      <div class="obstacles">
+        <label>물체의 색상:</label>
+        <input class="color" type="color" value="#735940"/>
+        <button class="clear">새로고침</button>
+        <div class="slider">
+          <label>반지름:</label>
+          <input class="size" type="range" step="2"
+                 min="2" max="128" value="20"/>
+        </div>
+      </div>
+     
+    </div>
+    <div class="description">
+      <p>
+        WEBGL을 배우면서 파티클을 구현해 보았습니다.
+      </p>
+      <p>
+      
+      <p>
+        마우스로 클릭하여서 여러 기능들을 사용해보세요.
+      </p>
+    </div>
+  </body>
+</html>
